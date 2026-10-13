@@ -1,0 +1,4 @@
+Laptop, 2, 10000000
+Mouse, N/A, 150000
+Keyboard, 3, 500000
+Monitor, 1, INVALID
