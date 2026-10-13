@@ -30,6 +30,6 @@ def process_scores(scores):
         
         i += 1
 
-    return f"Output: ({even_sum}, {odd_numbers})"
+    return (even_sum, odd_numbers)
 
 print(process_scores([10, 3, 4, 7, -2, 8, 5]))
