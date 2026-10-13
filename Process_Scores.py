@@ -11,3 +11,25 @@ Rules:
     If it is odd, append it to a new list odd_numbers.
 4. Return a tuple formatted as (even_sum, odd_numbers).
 """
+
+def process_scores(scores):
+
+    i = 0
+    even_sum = 0
+    odd_numbers = []
+
+    while i < len(scores):
+        num = scores[i]
+
+        if num < 0:
+            break
+        elif num % 2 == 0:
+            even_sum += num
+        elif num % 2 == 1:
+            odd_numbers.append(num)
+        
+        i += 1
+
+    return f"Output: ({even_sum}, {odd_numbers})"
+
+print(process_scores([10, 3, 4, 7, -2, 8, 5]))
